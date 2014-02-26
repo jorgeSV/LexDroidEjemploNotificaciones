@@ -1,4 +1,4 @@
-package com.example.ejemplonotificaciones;
+package com.sovejo.lexdroidejemplonotificaciones;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -36,7 +36,7 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 		PendingIntent penint = PendingIntent.getActivity(this, 0, intent, 0);
 		
 		String aviso = "Notificacion";
-		String texto = "Sí ha funcionado";
+		String texto = "S?? ha funcionado";
 		
 		Notification notification = new Notification(R.drawable.ic_launcher, aviso, System.currentTimeMillis());
 		notification.setLatestEventInfo(this, texto, aviso, penint);
